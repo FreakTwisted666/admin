@@ -1,4 +1,6 @@
 ---
+import { SignedIn, SignedOut, UserButton, SignInButton } from "@clerk/astro/components";
+
 interface Props {
   title: string;
 }
@@ -22,12 +24,20 @@ const { title } = Astro.props;
             <span class="text-2xl">🤖</span>
             <span class="text-xl font-bold text-gray-800">AdminFlow AI</span>
           </div>
-          <div class="flex space-x-4">
-            <a href="/dashboard" class="text-gray-600 hover:text-primary-600 transition">Dashboard</a>
-            <a href="/email" class="text-gray-600 hover:text-primary-600 transition">Email</a>
-            <a href="/calendar" class="text-gray-600 hover:text-primary-600 transition">Calendar</a>
-            <a href="/docs" class="text-gray-600 hover:text-primary-600 transition">Documents</a>
-            <a href="/settings" class="text-gray-600 hover:text-primary-600 transition">Settings</a>
+          <div class="flex items-center space-x-6">
+            <SignedIn>
+              <div class="flex space-x-4">
+                <a href="/dashboard" class="text-gray-600 hover:text-primary-600 transition">Dashboard</a>
+                <a href="/email" class="text-gray-600 hover:text-primary-600 transition">Email</a>
+                <a href="/calendar" class="text-gray-600 hover:text-primary-600 transition">Calendar</a>
+                <a href="/docs" class="text-gray-600 hover:text-primary-600 transition">Documents</a>
+                <a href="/settings" class="text-gray-600 hover:text-primary-600 transition">Settings</a>
+              </div>
+              <UserButton />
+            </SignedIn>
+            <SignedOut>
+              <SignInButton mode="modal" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition" />
+            </SignedOut>
           </div>
         </div>
       </div>
