@@ -1,0 +1,30 @@
+# Follow-up Email
+**Subject:** Follow-up: [Topic]
+
+---
+
+Hi [Recipient Name],
+
+I hope this email finds you well.
+
+I'm writing to follow up on our previous conversation regarding [Topic].
+
+**Key Points to Discuss:**
+- [Point 1]
+- [Point 2]
+- [Point 3]
+
+**My Request:**
+[Be specific about what you need - reply, meeting, information, etc.]
+
+**Preferred Time:**
+[Time slot or availability]
+
+Please let me know if this works for you. If not, I'm happy to adjust to your schedule.
+
+Best regards,
+
+[Your Name]
+[Your Title]
+[Your Company]
+[Contact Information]

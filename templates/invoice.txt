@@ -1,0 +1,41 @@
+# Invoice #[Invoice Number]
+**[Business Name]**
+
+## Invoice Details
+- **Invoice Number:** [Invoice Number]
+- **Date:** [Invoice Date]
+- **Due Date:** [Due Date]
+
+## Bill To
+**[Client Name]**
+[Address]
+[City, State, ZIP]
+[Email]
+[Phone]
+
+## Payment Information
+- **Account Name:** [Bank Name]
+- **Account Number:** [Account Number]
+- **Routing Number:** [Routing Number]
+- **SWIFT/ABA:** [SWIFT/ABA Code]
+
+## Invoice Items
+| Description | Quantity | Unit Price | Total |
+|------------|----------|------------|-------|
+| [Service 1] | [Quantity] | $[Price] | $[Total] |
+| [Service 2] | [Quantity] | $[Price] | $[Total] |
+| [Service 3] | [Quantity] | $[Price] | $[Total] |
+| **Subtotal** | | | **$[Subtotal]** |
+| **Tax** | | | **$[Tax]** |
+| **Total Due** | | | **$[Total]** |
+
+## Payment Terms
+Payment is due within [Number] days of invoice date. Late payments may incur a [Percentage]% late fee.
+
+## Thank You
+Thank you for your business! We appreciate your prompt payment.
+
+**[Business Name]**
+[Contact Information]
+[Website]
+[Email]

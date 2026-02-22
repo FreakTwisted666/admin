@@ -1,0 +1,44 @@
+# Contract Template
+## [Party Name]
+
+**This Agreement** is made on this [Date] day of [Month], 2026
+
+### 1. Parties
+**Party A:** [Party Name]
+**Party B:** [Party Name]
+
+### 2. Services
+Party A agrees to provide the following services to Party B:
+- [Service 1]
+- [Service 2]
+- [Service 3]
+
+### 3. Payment Terms
+- **Total Amount:** $[Amount]
+- **Payment Schedule:** [Payment terms - e.g., 50% upfront, 50% on completion]
+- **Payment Method:** [Payment method]
+
+### 4. Term
+This Agreement shall commence on [Start Date] and continue until [End Date] unless terminated earlier as agreed.
+
+### 5. Confidentiality
+Both parties agree to maintain the confidentiality of all proprietary information shared during the engagement.
+
+### 6. Limitation of Liability
+Party A shall not be liable for any indirect, incidental, special, or consequential damages resulting from the performance of this Agreement.
+
+### 7. Governing Law
+This Agreement shall be governed by and construed in accordance with the laws of [Jurisdiction].
+
+### 8. Termination
+Either party may terminate this Agreement upon [Number] days written notice to the other party.
+
+**Signed:**
+
+___________________________
+Party A Representative
+Date: [Date]
+
+___________________________
+Party B Representative
+Date: [Date]
