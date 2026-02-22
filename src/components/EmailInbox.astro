@@ -1,0 +1,89 @@
+---
+---
+
+<div class="bg-white rounded-lg shadow p-6">
+  <div class="flex items-center justify-between mb-4">
+    <h2 class="text-xl font-semibold text-gray-800">📧 Email Inbox</h2>
+    <button class="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition flex items-center space-x-2">
+      <span>📧</span>
+      <span>Refresh</span>
+    </button>
+  </div>
+
+  <!-- Email Categories -->
+  <div class="flex space-x-2 mb-6">
+    <button class="px-4 py-2 bg-primary-600 text-white rounded-lg">All</button>
+    <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition">Unread</button>
+    <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition">High Priority</button>
+    <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition">Client</button>
+  </div>
+
+  <!-- Email List -->
+  <div class="space-y-4">
+    <!-- High Priority Email -->
+    <div class="border-l-4 border-red-500 bg-red-50 rounded-r-lg p-4">
+      <div class="flex items-start justify-between">
+        <div class="flex-1">
+          <div class="flex items-center space-x-2 mb-2">
+            <span class="px-2 py-1 bg-red-500 text-white text-xs rounded">High Priority</span>
+            <span class="text-gray-600 text-sm">2 hours ago</span>
+          </div>
+          <h3 class="font-semibold text-gray-800">Urgent: Contract for new project</h3>
+          <p class="text-gray-600 text-sm mt-1">Sarah Johnson - CEO, Acme Corp</p>
+        </div>
+        <div class="flex space-x-2 ml-4">
+          <button class="px-3 py-1 bg-primary-600 text-white rounded text-sm hover:bg-primary-700 transition">
+            ✉️ AI Response
+          </button>
+          <button class="px-3 py-1 bg-gray-200 text-gray-700 rounded text-sm hover:bg-gray-300 transition">
+            📥 Reply
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Medium Priority Email -->
+    <div class="border-l-4 border-yellow-500 bg-yellow-50 rounded-r-lg p-4">
+      <div class="flex items-start justify-between">
+        <div class="flex-1">
+          <div class="flex items-center space-x-2 mb-2">
+            <span class="px-2 py-1 bg-yellow-500 text-white text-xs rounded">Medium Priority</span>
+            <span class="text-gray-600 text-sm">5 hours ago</span>
+          </div>
+          <h3 class="font-semibold text-gray-800">Meeting confirmation needed</h3>
+          <p class="text-gray-600 text-sm mt-1">Michael Chen - Project Manager</p>
+        </div>
+        <div class="flex space-x-2 ml-4">
+          <button class="px-3 py-1 bg-primary-600 text-white rounded text-sm hover:bg-primary-700 transition">
+            ✉️ AI Response
+          </button>
+          <button class="px-3 py-1 bg-gray-200 text-gray-700 rounded text-sm hover:bg-gray-300 transition">
+            📥 Reply
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Low Priority Email -->
+    <div class="border-l-4 border-green-500 bg-green-50 rounded-r-lg p-4">
+      <div class="flex items-start justify-between">
+        <div class="flex-1">
+          <div class="flex items-center space-x-2 mb-2">
+            <span class="px-2 py-1 bg-green-500 text-white text-xs rounded">Low Priority</span>
+            <span class="text-gray-600 text-sm">Yesterday</span>
+          </div>
+          <h3 class="font-semibold text-gray-800">Invoice payment confirmation</h3>
+          <p class="text-gray-600 text-sm mt-1">Microsoft - Billing Department</p>
+        </div>
+        <div class="flex space-x-2 ml-4">
+          <button class="px-3 py-1 bg-primary-600 text-white rounded text-sm hover:bg-primary-700 transition">
+            ✉️ AI Response
+          </button>
+          <button class="px-3 py-1 bg-gray-200 text-gray-700 rounded text-sm hover:bg-gray-300 transition">
+            📥 Reply
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

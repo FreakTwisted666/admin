@@ -1,0 +1,53 @@
+---
+---
+
+<div class="bg-white rounded-lg shadow p-6">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-xl font-semibold text-gray-800">📅 Smart Scheduling</h2>
+    <button class="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition">
+      + New Booking Link
+    </button>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <!-- AI Suggestions -->
+    <div class="space-y-4">
+      <h3 class="font-medium text-gray-700">AI Suggested Slots</h3>
+      <div class="p-4 bg-primary-50 border border-primary-100 rounded-lg">
+        <p class="text-sm text-primary-800 mb-3">Based on your preferences and calendar, these are the best times for client calls next week:</p>
+        <div class="space-y-2">
+          <button class="w-full text-left p-2 bg-white border border-primary-200 rounded hover:border-primary-500 transition text-sm">
+            Tuesday, Feb 24: 2:00 PM - 4:00 PM
+          </button>
+          <button class="w-full text-left p-2 bg-white border border-primary-200 rounded hover:border-primary-500 transition text-sm">
+            Wednesday, Feb 25: 10:00 AM - 12:00 PM
+          </button>
+          <button class="w-full text-left p-2 bg-white border border-primary-200 rounded hover:border-primary-500 transition text-sm">
+            Friday, Feb 27: 3:00 PM - 5:00 PM
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Links -->
+    <div class="space-y-4">
+      <h3 class="font-medium text-gray-700">Active Booking Pages</h3>
+      <div class="space-y-3">
+        <div class="p-3 border border-gray-200 rounded-lg flex items-center justify-between">
+          <div>
+            <div class="font-medium text-sm">15 Min Discovery Call</div>
+            <div class="text-xs text-gray-500">adminflow.ai/book/discovery</div>
+          </div>
+          <button class="text-primary-600 text-sm font-medium">Copy Link</button>
+        </div>
+        <div class="p-3 border border-gray-200 rounded-lg flex items-center justify-between">
+          <div>
+            <div class="font-medium text-sm">60 Min Strategy Session</div>
+            <div class="text-xs text-gray-500">adminflow.ai/book/strategy</div>
+          </div>
+          <button class="text-primary-600 text-sm font-medium">Copy Link</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
