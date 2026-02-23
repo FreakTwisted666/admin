@@ -4,20 +4,34 @@ import Dashboard from '../components/Dashboard.astro';
 import { SignedIn, SignedOut, SignInButton } from "@clerk/astro/components";
 ---
 
-<Layout title="AdminFlow AI">
+<Layout 
+  title="AdminFlow AI - Intelligent Administrative Automation Platform"
+  description="AdminFlow AI is an AI-powered administrative automation platform that handles email management, smart scheduling, and document generation. Automate your workflow with Mistral AI integration."
+>
   <main class="container mx-auto px-4 py-8">
     <SignedIn>
       <h1 class="text-3xl font-bold mb-8 text-gray-800">Welcome to Your Dashboard</h1>
       <Dashboard />
     </SignedIn>
     <SignedOut>
+      <!-- Hero Section with Definition Block (AI SEO Optimized) -->
       <div class="max-w-4xl mx-auto text-center py-16">
+        <!-- H1: Primary keyword + clear definition -->
         <h1 class="text-5xl font-extrabold text-gray-900 mb-6">
-          Your AI-Powered Administrative Team
+          AdminFlow AI - Your AI-Powered Administrative Team
         </h1>
-        <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-          Handle admin work while you focus on growth. Email automation, smart scheduling, and document generation powered by Mistral AI.
-        </p>
+        
+        <!-- Definition Block (First 100 words for AI extraction) -->
+        <div class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+          <p class="mb-4">
+            <strong>AdminFlow AI is an intelligent administrative automation platform</strong> that uses artificial intelligence to handle repetitive admin tasks. It automates email management with AI-powered sorting, provides smart calendar scheduling with conflict detection, and generates professional documents instantly using Mistral AI technology.
+          </p>
+          <p>
+            Designed for small businesses, entrepreneurs, and professionals who want to reduce administrative workload by 80% while maintaining quality and accuracy.
+          </p>
+        </div>
+        
+        <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
           <SignInButton mode="modal" class="w-full sm:w-auto px-8 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition shadow-lg" />
           <a href="#features" class="w-full sm:w-auto px-8 py-3 bg-white text-indigo-600 border border-indigo-600 rounded-lg font-semibold hover:bg-indigo-50 transition">
@@ -25,21 +39,143 @@ import { SignedIn, SignedOut, SignInButton } from "@clerk/astro/components";
           </a>
         </div>
         
-        <div id="features" class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div class="p-6 bg-white rounded-xl shadow-md border border-gray-100">
-            <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center text-2xl mb-4 mx-auto">📧</div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Email Automation</h3>
-            <p class="text-gray-600">AI-powered priority sorting and one-click responses for Gmail and Outlook.</p>
+        <!-- Features Section (Structured for AI Extraction) -->
+        <div id="features" class="mt-24">
+          <!-- H2: Section heading with keyword -->
+          <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+            What Is AdminFlow AI? Core Features
+          </h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Feature 1: Email Automation -->
+            <div class="p-6 bg-white rounded-xl shadow-md border border-gray-100">
+              <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center text-2xl mb-4 mx-auto">📧</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Email Automation</h3>
+              <p class="text-gray-600 mb-3">
+                <strong>Email automation</strong> is the process of using AI to sort, prioritize, and respond to emails automatically. AdminFlow AI analyzes incoming messages, identifies urgent items, and suggests one-click responses.
+              </p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>✓ Gmail and Outlook integration</li>
+                <li>✓ AI-powered priority sorting</li>
+                <li>✓ One-click response suggestions</li>
+                <li>✓ Spam detection and filtering</li>
+              </ul>
+            </div>
+            
+            <!-- Feature 2: Smart Scheduling -->
+            <div class="p-6 bg-white rounded-xl shadow-md border border-gray-100">
+              <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center text-2xl mb-4 mx-auto">📅</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Smart Scheduling</h3>
+              <p class="text-gray-600 mb-3">
+                <strong>Smart scheduling</strong> automatically finds optimal meeting times by analyzing calendar availability, time zones, and participant preferences. Eliminates back-and-forth email chains.
+              </p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>✓ Automatic conflict detection</li>
+                <li>✓ Time zone optimization</li>
+                <li>✓ Professional booking links</li>
+                <li>✓ Calendar sync (Google, Outlook)</li>
+              </ul>
+            </div>
+            
+            <!-- Feature 3: Document Generator -->
+            <div class="p-6 bg-white rounded-xl shadow-md border border-gray-100">
+              <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center text-2xl mb-4 mx-auto">📄</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Document Generator</h3>
+              <p class="text-gray-600 mb-3">
+                <strong>Document generation</strong> uses AI to create professional contracts, invoices, proposals, and reports from templates. Customizes content based on your input data.
+              </p>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>✓ AI-built templates</li>
+                <li>✓ Instant customization</li>
+                <li>✓ Professional formatting</li>
+                <li>✓ Export to PDF/Word</li>
+              </ul>
+            </div>
           </div>
-          <div class="p-6 bg-white rounded-xl shadow-md border border-gray-100">
-            <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center text-2xl mb-4 mx-auto">📅</div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Smart Scheduling</h3>
-            <p class="text-gray-600">Find the perfect meeting time and give clients a professional booking link.</p>
+        </div>
+        
+        <!-- How It Works Section (AI-friendly structured content) -->
+        <div class="mt-24">
+          <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+            How AdminFlow AI Works
+          </h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+              <h3 class="font-bold text-gray-900 mb-2">Connect Accounts</h3>
+              <p class="text-gray-600 text-sm">Link your email, calendar, and document storage in seconds</p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+              <h3 class="font-bold text-gray-900 mb-2">AI Analysis</h3>
+              <p class="text-gray-600 text-sm">Mistral AI analyzes your workflow and identifies automation opportunities</p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+              <h3 class="font-bold text-gray-900 mb-2">Automate Tasks</h3>
+              <p class="text-gray-600 text-sm">Set up automated workflows for emails, scheduling, and documents</p>
+            </div>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
+              <h3 class="font-bold text-gray-900 mb-2">Monitor & Optimize</h3>
+              <p class="text-gray-600 text-sm">Track time saved and refine automation rules as needed</p>
+            </div>
           </div>
-          <div class="p-6 bg-white rounded-xl shadow-md border border-gray-100">
-            <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center text-2xl mb-4 mx-auto">📄</div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Document Generator</h3>
-            <p class="text-gray-600">Instantly generate contracts, invoices, and proposals with AI-built templates.</p>
+        </div>
+        
+        <!-- Benefits Section (Entity-rich content for AI search) -->
+        <div class="mt-24 text-left">
+          <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+            Benefits of AdminFlow AI for Small Business
+          </h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="p-6 bg-indigo-50 rounded-lg">
+              <h3 class="font-bold text-gray-900 mb-3">Time Savings</h3>
+              <p class="text-gray-700">Reduce administrative workload by up to 80%. Save 10-15 hours per week on email management, scheduling, and document creation.</p>
+            </div>
+            <div class="p-6 bg-indigo-50 rounded-lg">
+              <h3 class="font-bold text-gray-900 mb-3">Cost Efficiency</h3>
+              <p class="text-gray-700">Replace multiple tools with one platform. No need for separate email, calendar, and document tools.</p>
+            </div>
+            <div class="p-6 bg-indigo-50 rounded-lg">
+              <h3 class="font-bold text-gray-900 mb-3">Accuracy</h3>
+              <p class="text-gray-700">AI-powered error detection ensures professional output. Reduce mistakes in scheduling and document generation.</p>
+            </div>
+            <div class="p-6 bg-indigo-50 rounded-lg">
+              <h3 class="font-bold text-gray-900 mb-3">Scalability</h3>
+              <p class="text-gray-700">Grow your business without adding admin staff. AdminFlow AI scales with your workload automatically.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FAQ Section (Optimized for AI answer boxes) -->
+        <div class="mt-24 text-left">
+          <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+            Frequently Asked Questions
+          </h2>
+          
+          <div class="space-y-6 max-w-3xl mx-auto">
+            <div class="p-6 bg-white rounded-lg shadow-sm border border-gray-200">
+              <h3 class="font-bold text-gray-900 mb-2">What is AdminFlow AI?</h3>
+              <p class="text-gray-700">AdminFlow AI is an AI-powered administrative automation platform that handles email management, smart scheduling, and document generation using Mistral AI technology.</p>
+            </div>
+            
+            <div class="p-6 bg-white rounded-lg shadow-sm border border-gray-200">
+              <h3 class="font-bold text-gray-900 mb-2">How much does AdminFlow AI cost?</h3>
+              <p class="text-gray-700">AdminFlow AI offers a free tier with basic features. Premium plans start at $19/month for advanced automation and priority support.</p>
+            </div>
+            
+            <div class="p-6 bg-white rounded-lg shadow-sm border border-gray-200">
+              <h3 class="font-bold text-gray-900 mb-2">Which email providers does AdminFlow AI support?</h3>
+              <p class="text-gray-700">AdminFlow AI currently supports Gmail and Outlook/Office 365. Additional providers will be added in future updates.</p>
+            </div>
+            
+            <div class="p-6 bg-white rounded-lg shadow-sm border border-gray-200">
+              <h3 class="font-bold text-gray-900 mb-2">Is my data secure with AdminFlow AI?</h3>
+              <p class="text-gray-700">Yes. AdminFlow AI uses enterprise-grade encryption, Clerk authentication, and never stores your email content. All processing happens in real-time.</p>
+            </div>
           </div>
         </div>
       </div>

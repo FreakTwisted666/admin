@@ -3,9 +3,15 @@ import { SignedIn, SignedOut, UserButton, SignInButton } from "@clerk/astro/comp
 
 interface Props {
   title: string;
+  description?: string;
+  image?: string;
 }
 
-const { title } = Astro.props;
+const { title, description = "AdminFlow AI - Intelligent administrative automation platform powered by AI. Automate emails, schedules, documents, and workflows with AI-powered tools.", image } = Astro.props;
+
+const siteUrl = "https://adminflow-ai.vercel.app";
+const canonicalUrl = `${siteUrl}${Astro.url.pathname}`;
+const publishedDate = "2026-02-23";
 ---
 
 <!doctype html>
@@ -13,7 +19,63 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
     <title>{title} - AdminFlow AI</title>
+    <meta name="title" content="{title} - AdminFlow AI" />
+    <meta name="description" content={description} />
+    <meta name="author" content="Ultraction Team" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonicalUrl} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image || `${siteUrl}/og-image.png`} />
+    <meta property="og:site_name" content="AdminFlow AI" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalUrl} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={image || `${siteUrl}/og-image.png`} />
+    
+    <!-- AI Search Optimization -->
+    <meta name="application-name" content="AdminFlow AI" />
+    <meta name="theme-color" content="#4F46E5" />
+    
+    <!-- Structured Data (JSON-LD) for AI Search -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "AdminFlow AI",
+      "description": description,
+      "url": siteUrl,
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Ultraction",
+        "url": "https://ultraction.com"
+      },
+      "datePublished": publishedDate,
+      "featureList": [
+        "AI-powered email automation",
+        "Smart calendar scheduling",
+        "Document generation",
+        "Workflow automation",
+        "Task management"
+      ]
+    })} />
+    
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-50 min-h-screen">
