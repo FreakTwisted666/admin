@@ -8,177 +8,347 @@ import { SignedIn, SignedOut, SignInButton } from "@clerk/astro/components";
   title="AdminFlow AI - Intelligent Administrative Automation Platform"
   description="AdminFlow AI is an AI-powered administrative automation platform that handles email management, smart scheduling, and document generation. Automate your workflow with Mistral AI integration."
 >
-  <main class="container mx-auto px-4 py-8">
+  <main class="animate-fade-in">
     <SignedIn>
-      <h1 class="text-3xl font-bold mb-8 text-gray-800">Welcome to Your Dashboard</h1>
-      <Dashboard />
+      <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8 text-gray-800">Welcome to Your Dashboard</h1>
+        <Dashboard />
+      </div>
     </SignedIn>
+    
     <SignedOut>
-      <!-- Hero Section with Definition Block (AI SEO Optimized) -->
-      <div class="max-w-4xl mx-auto text-center py-16">
-        <!-- H1: Primary keyword + clear definition -->
-        <h1 class="text-5xl font-extrabold text-gray-900 mb-6">
-          AdminFlow AI - Your AI-Powered Administrative Team
-        </h1>
+      <!-- Hero Section -->
+      <section class="relative overflow-hidden py-20 lg:py-32">
+        <!-- Background gradient orbs -->
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float"></div>
+        <div class="absolute top-0 right-1/4 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float" style="animation-delay: 1s;"></div>
+        <div class="absolute -bottom-32 left-1/2 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float" style="animation-delay: 2s;"></div>
         
-        <!-- Definition Block (First 100 words for AI extraction) -->
-        <div class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-          <p class="mb-4">
-            <strong>AdminFlow AI is an intelligent administrative automation platform</strong> that uses artificial intelligence to handle repetitive admin tasks. It automates email management with AI-powered sorting, provides smart calendar scheduling with conflict detection, and generates professional documents instantly using Mistral AI technology.
-          </p>
-          <p>
-            Designed for small businesses, entrepreneurs, and professionals who want to reduce administrative workload by 80% while maintaining quality and accuracy.
-          </p>
+        <div class="container mx-auto px-4 relative z-10">
+          <div class="max-w-5xl mx-auto text-center">
+            <!-- Badge -->
+            <div class="inline-flex items-center space-x-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-8 animate-slide-down">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
+              </span>
+              <span>Powered by Mistral AI</span>
+            </div>
+            
+            <!-- Main Headline -->
+            <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 leading-tight animate-slide-up">
+              Your AI-Powered
+              <span class="gradient-text block">Administrative Team</span>
+            </h1>
+            
+            <!-- Subheadline -->
+            <p class="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto animate-slide-up" style="animation-delay: 0.1s;">
+              Automate 80% of your admin work. Handle emails, schedule meetings, and generate documents 
+              with intelligent AI that works while you focus on growth.
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-scale-in" style="animation-delay: 0.2s;">
+              <SignInButton 
+                mode="modal" 
+                class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-xl font-bold text-lg hover:from-primary-700 hover:to-primary-800 transition shadow-xl hover:shadow-2xl transform hover:scale-105"
+              />
+              <a 
+                href="#features" 
+                class="w-full sm:w-auto px-8 py-4 bg-white text-primary-600 border-2 border-primary-600 rounded-xl font-bold text-lg hover:bg-primary-50 transition shadow-md hover:shadow-lg"
+              >
+                See How It Works
+              </a>
+            </div>
+            
+            <!-- Social Proof -->
+            <div class="flex flex-wrap items-center justify-center gap-8 text-gray-400 animate-fade-in" style="animation-delay: 0.3s;">
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-sm font-medium">No credit card required</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-sm font-medium">Free tier available</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-sm font-medium">Setup in 2 minutes</span>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <SignInButton mode="modal" class="w-full sm:w-auto px-8 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition shadow-lg" />
-          <a href="#features" class="w-full sm:w-auto px-8 py-3 bg-white text-indigo-600 border border-indigo-600 rounded-lg font-semibold hover:bg-indigo-50 transition">
-            Learn More
-          </a>
-        </div>
-        
-        <!-- Features Section (Structured for AI Extraction) -->
-        <div id="features" class="mt-24">
-          <!-- H2: Section heading with keyword -->
-          <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
-            What Is AdminFlow AI? Core Features
-          </h2>
+      </section>
+      
+      <!-- Features Section -->
+      <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16 animate-slide-up">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+              Everything You Need to
+              <span class="gradient-text">Automate Admin Work</span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+              Powerful AI tools that handle your repetitive tasks so you can focus on what matters.
+            </p>
+          </div>
           
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <!-- Feature 1: Email Automation -->
-            <div class="p-6 bg-white rounded-xl shadow-md border border-gray-100">
-              <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center text-2xl mb-4 mx-auto">📧</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Email Automation</h3>
-              <p class="text-gray-600 mb-3">
-                <strong>Email automation</strong> is the process of using AI to sort, prioritize, and respond to emails automatically. AdminFlow AI analyzes incoming messages, identifies urgent items, and suggests one-click responses.
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+            <!-- Feature 1 -->
+            <div class="feature-card p-8 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 animate-scale-in">
+              <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-lg">
+                📧
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">Email Automation</h3>
+              <p class="text-gray-600 mb-4">
+                AI-powered priority sorting and intelligent response suggestions. Never miss an important email again.
               </p>
-              <ul class="text-sm text-gray-600 space-y-1">
-                <li>✓ Gmail and Outlook integration</li>
-                <li>✓ AI-powered priority sorting</li>
-                <li>✓ One-click response suggestions</li>
-                <li>✓ Spam detection and filtering</li>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center space-x-2">
+                  <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Gmail & Outlook integration</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Smart priority detection</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>One-click AI responses</span>
+                </li>
               </ul>
             </div>
             
-            <!-- Feature 2: Smart Scheduling -->
-            <div class="p-6 bg-white rounded-xl shadow-md border border-gray-100">
-              <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center text-2xl mb-4 mx-auto">📅</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Smart Scheduling</h3>
-              <p class="text-gray-600 mb-3">
-                <strong>Smart scheduling</strong> automatically finds optimal meeting times by analyzing calendar availability, time zones, and participant preferences. Eliminates back-and-forth email chains.
+            <!-- Feature 2 -->
+            <div class="feature-card p-8 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 animate-scale-in" style="animation-delay: 0.1s;">
+              <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-lg">
+                📅
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">Smart Scheduling</h3>
+              <p class="text-gray-600 mb-4">
+                Eliminate scheduling back-and-forth. AI finds perfect meeting times across time zones.
               </p>
-              <ul class="text-sm text-gray-600 space-y-1">
-                <li>✓ Automatic conflict detection</li>
-                <li>✓ Time zone optimization</li>
-                <li>✓ Professional booking links</li>
-                <li>✓ Calendar sync (Google, Outlook)</li>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center space-x-2">
+                  <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Auto conflict detection</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Time zone optimization</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Professional booking links</span>
+                </li>
               </ul>
             </div>
             
-            <!-- Feature 3: Document Generator -->
-            <div class="p-6 bg-white rounded-xl shadow-md border border-gray-100">
-              <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center text-2xl mb-4 mx-auto">📄</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Document Generator</h3>
-              <p class="text-gray-600 mb-3">
-                <strong>Document generation</strong> uses AI to create professional contracts, invoices, proposals, and reports from templates. Customizes content based on your input data.
+            <!-- Feature 3 -->
+            <div class="feature-card p-8 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 animate-scale-in" style="animation-delay: 0.2s;">
+              <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-pink-700 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-lg">
+                📄
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">Document Generator</h3>
+              <p class="text-gray-600 mb-4">
+                Create professional contracts, invoices, and proposals instantly with AI-powered templates.
               </p>
-              <ul class="text-sm text-gray-600 space-y-1">
-                <li>✓ AI-built templates</li>
-                <li>✓ Instant customization</li>
-                <li>✓ Professional formatting</li>
-                <li>✓ Export to PDF/Word</li>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center space-x-2">
+                  <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>AI-built templates</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Instant customization</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Export to PDF/Word</span>
+                </li>
               </ul>
             </div>
           </div>
         </div>
-        
-        <!-- How It Works Section (AI-friendly structured content) -->
-        <div class="mt-24">
-          <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
-            How AdminFlow AI Works
-          </h2>
+      </section>
+      
+      <!-- How It Works Section -->
+      <section class="py-20 bg-gradient-to-br from-primary-50 via-white to-purple-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16 animate-slide-up">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+              Get Started in
+              <span class="gradient-text">Minutes</span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+              Four simple steps to transform your administrative workflow.
+            </p>
+          </div>
           
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div class="text-center">
-              <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
-              <h3 class="font-bold text-gray-900 mb-2">Connect Accounts</h3>
-              <p class="text-gray-600 text-sm">Link your email, calendar, and document storage in seconds</p>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <!-- Step 1 -->
+            <div class="text-center animate-scale-in">
+              <div class="w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-700 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-xl">
+                1
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Connect Accounts</h3>
+              <p class="text-gray-600">Link your email, calendar, and document storage in seconds with secure OAuth.</p>
             </div>
-            <div class="text-center">
-              <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
-              <h3 class="font-bold text-gray-900 mb-2">AI Analysis</h3>
-              <p class="text-gray-600 text-sm">Mistral AI analyzes your workflow and identifies automation opportunities</p>
+            
+            <!-- Step 2 -->
+            <div class="text-center animate-scale-in" style="animation-delay: 0.1s;">
+              <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-xl">
+                2
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">AI Analysis</h3>
+              <p class="text-gray-600">Mistral AI analyzes your workflow and identifies automation opportunities.</p>
             </div>
-            <div class="text-center">
-              <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
-              <h3 class="font-bold text-gray-900 mb-2">Automate Tasks</h3>
-              <p class="text-gray-600 text-sm">Set up automated workflows for emails, scheduling, and documents</p>
+            
+            <!-- Step 3 -->
+            <div class="text-center animate-scale-in" style="animation-delay: 0.2s;">
+              <div class="w-20 h-20 bg-gradient-to-br from-pink-500 to-pink-700 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-xl">
+                3
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Automate Tasks</h3>
+              <p class="text-gray-600">Set up automated workflows for emails, scheduling, and documents.</p>
             </div>
-            <div class="text-center">
-              <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
-              <h3 class="font-bold text-gray-900 mb-2">Monitor & Optimize</h3>
-              <p class="text-gray-600 text-sm">Track time saved and refine automation rules as needed</p>
+            
+            <!-- Step 4 -->
+            <div class="text-center animate-scale-in" style="animation-delay: 0.3s;">
+              <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-xl">
+                4
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Monitor & Optimize</h3>
+              <p class="text-gray-600">Track time saved and refine automation rules as your business grows.</p>
             </div>
           </div>
         </div>
-        
-        <!-- Benefits Section (Entity-rich content for AI search) -->
-        <div class="mt-24 text-left">
-          <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
-            Benefits of AdminFlow AI for Small Business
-          </h2>
+      </section>
+      
+      <!-- Benefits Section -->
+      <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16 animate-slide-up">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+              Why Teams Love
+              <span class="gradient-text">AdminFlow AI</span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+              Real benefits that impact your bottom line.
+            </p>
+          </div>
           
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="p-6 bg-indigo-50 rounded-lg">
-              <h3 class="font-bold text-gray-900 mb-3">Time Savings</h3>
-              <p class="text-gray-700">Reduce administrative workload by up to 80%. Save 10-15 hours per week on email management, scheduling, and document creation.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="p-8 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl border border-green-100 animate-scale-in">
+              <div class="text-4xl font-bold text-green-600 mb-2">80%</div>
+              <div class="text-gray-900 font-semibold mb-2">Time Reduction</div>
+              <p class="text-gray-600 text-sm">Reduce administrative workload by up to 80%</p>
             </div>
-            <div class="p-6 bg-indigo-50 rounded-lg">
-              <h3 class="font-bold text-gray-900 mb-3">Cost Efficiency</h3>
-              <p class="text-gray-700">Replace multiple tools with one platform. No need for separate email, calendar, and document tools.</p>
+            
+            <div class="p-8 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl border border-blue-100 animate-scale-in" style="animation-delay: 0.1s;">
+              <div class="text-4xl font-bold text-blue-600 mb-2">10-15h</div>
+              <div class="text-gray-900 font-semibold mb-2">Saved Weekly</div>
+              <p class="text-gray-600 text-sm">Average time saved per user every week</p>
             </div>
-            <div class="p-6 bg-indigo-50 rounded-lg">
-              <h3 class="font-bold text-gray-900 mb-3">Accuracy</h3>
-              <p class="text-gray-700">AI-powered error detection ensures professional output. Reduce mistakes in scheduling and document generation.</p>
+            
+            <div class="p-8 bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl border border-purple-100 animate-scale-in" style="animation-delay: 0.2s;">
+              <div class="text-4xl font-bold text-purple-600 mb-2">2min</div>
+              <div class="text-gray-900 font-semibold mb-2">Setup Time</div>
+              <p class="text-gray-600 text-sm">Get started in under 2 minutes</p>
             </div>
-            <div class="p-6 bg-indigo-50 rounded-lg">
-              <h3 class="font-bold text-gray-900 mb-3">Scalability</h3>
-              <p class="text-gray-700">Grow your business without adding admin staff. AdminFlow AI scales with your workload automatically.</p>
+            
+            <div class="p-8 bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl border border-orange-100 animate-scale-in" style="animation-delay: 0.3s;">
+              <div class="text-4xl font-bold text-orange-600 mb-2">99.9%</div>
+              <div class="text-gray-900 font-semibold mb-2">Uptime</div>
+              <p class="text-gray-600 text-sm">Enterprise-grade reliability</p>
             </div>
           </div>
         </div>
-        
-        <!-- FAQ Section (Optimized for AI answer boxes) -->
-        <div class="mt-24 text-left">
-          <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
-            Frequently Asked Questions
-          </h2>
+      </section>
+      
+      <!-- FAQ Section -->
+      <section id="faq" class="py-20 bg-gradient-to-br from-slate-50 via-white to-primary-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16 animate-slide-up">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+              Frequently Asked
+              <span class="gradient-text">Questions</span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+              Everything you need to know about AdminFlow AI.
+            </p>
+          </div>
           
-          <div class="space-y-6 max-w-3xl mx-auto">
-            <div class="p-6 bg-white rounded-lg shadow-sm border border-gray-200">
-              <h3 class="font-bold text-gray-900 mb-2">What is AdminFlow AI?</h3>
+          <div class="max-w-3xl mx-auto space-y-4">
+            <!-- FAQ 1 -->
+            <div class="p-6 bg-white rounded-2xl shadow-md border border-gray-100 animate-slide-up">
+              <h3 class="text-lg font-bold text-gray-900 mb-2">What is AdminFlow AI?</h3>
               <p class="text-gray-700">AdminFlow AI is an AI-powered administrative automation platform that handles email management, smart scheduling, and document generation using Mistral AI technology.</p>
             </div>
             
-            <div class="p-6 bg-white rounded-lg shadow-sm border border-gray-200">
-              <h3 class="font-bold text-gray-900 mb-2">How much does AdminFlow AI cost?</h3>
+            <!-- FAQ 2 -->
+            <div class="p-6 bg-white rounded-2xl shadow-md border border-gray-100 animate-slide-up" style="animation-delay: 0.1s;">
+              <h3 class="text-lg font-bold text-gray-900 mb-2">How much does AdminFlow AI cost?</h3>
               <p class="text-gray-700">AdminFlow AI offers a free tier with basic features. Premium plans start at $19/month for advanced automation and priority support.</p>
             </div>
             
-            <div class="p-6 bg-white rounded-lg shadow-sm border border-gray-200">
-              <h3 class="font-bold text-gray-900 mb-2">Which email providers does AdminFlow AI support?</h3>
+            <!-- FAQ 3 -->
+            <div class="p-6 bg-white rounded-2xl shadow-md border border-gray-100 animate-slide-up" style="animation-delay: 0.2s;">
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Which email providers does AdminFlow AI support?</h3>
               <p class="text-gray-700">AdminFlow AI currently supports Gmail and Outlook/Office 365. Additional providers will be added in future updates.</p>
             </div>
             
-            <div class="p-6 bg-white rounded-lg shadow-sm border border-gray-200">
-              <h3 class="font-bold text-gray-900 mb-2">Is my data secure with AdminFlow AI?</h3>
+            <!-- FAQ 4 -->
+            <div class="p-6 bg-white rounded-2xl shadow-md border border-gray-100 animate-slide-up" style="animation-delay: 0.3s;">
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Is my data secure with AdminFlow AI?</h3>
               <p class="text-gray-700">Yes. AdminFlow AI uses enterprise-grade encryption, Clerk authentication, and never stores your email content. All processing happens in real-time.</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      
+      <!-- CTA Section -->
+      <section class="py-20 bg-gradient-to-r from-primary-600 to-primary-800">
+        <div class="container mx-auto px-4 text-center">
+          <div class="max-w-3xl mx-auto animate-scale-in">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+              Ready to Automate Your Admin Work?
+            </h2>
+            <p class="text-xl text-primary-100 mb-10">
+              Join thousands of professionals saving 10+ hours per week with AdminFlow AI.
+            </p>
+            <SignInButton 
+              mode="modal" 
+              class="inline-block px-10 py-5 bg-white text-primary-600 rounded-xl font-bold text-lg hover:bg-gray-100 transition shadow-xl hover:shadow-2xl transform hover:scale-105"
+            />
+            <p class="text-primary-200 text-sm mt-4">Free tier available • No credit card required</p>
+          </div>
+        </div>
+      </section>
     </SignedOut>
   </main>
 </Layout>
